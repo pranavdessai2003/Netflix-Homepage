@@ -115,3 +115,28 @@ div.navbar .right a{
     color: white;
     margin-left: 17px;
 }
+
+#newreleaseicon{
+    width: 24px;
+    height: 26px;
+    position: relative;
+    top: 3px;
+    margin-left: 17px;
+}
+
+#profileavatar{
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 3px;
+    margin-left: 17px;
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
