@@ -9,8 +9,8 @@
 body {
     margin-top: 7.5px;
     margin-bottom: 11px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 0;
+    margin-right: 0;
     background-color: black;
     color: white;
     
@@ -21,6 +21,9 @@ div.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 8px;
 }
 
 div.navbar .left {
@@ -140,3 +143,15 @@ div.navbar .right a{
     gap: 10px;
 }
 
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
