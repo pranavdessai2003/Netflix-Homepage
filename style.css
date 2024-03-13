@@ -17,7 +17,7 @@ body {
 }
 
 div.navbar {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,6 +128,7 @@ div.navbar .right a{
 }
 
 #profileavatar{
+    border-radius: 5px;
     width: 36px;
     height: 36px;
     position: relative;
@@ -155,3 +156,32 @@ div.navbar .right a{
     bottom: 0;
     z-index: -1;
   }
+
+.herosection{
+    padding: 150px 110px;
+    width: 80vh;
+}
+
+.herosection .title img{
+    width: 90vh;
+}
+
+.herosection .description p{
+    width: 80vh;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:  20px;
+}
+
+.buttons button{
+    border: none;
+    padding: 10px 17px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
