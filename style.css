@@ -11,7 +11,7 @@ body {
     margin-bottom: 11px;
     margin-left: 0;
     margin-right: 0;
-    background-color: black;
+    background-color: #141414;
     color: white;
     
 }
@@ -28,14 +28,15 @@ main{
     padding-top: 60px;
 }
 div.navbar {
-    background-color: rgba(0, 0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
+    transition: 0.8s;
 }
+
 
 div.navbar .left {
     display: flex;
@@ -58,6 +59,11 @@ div.navbar .left {
     font-size: 13.5px;
     text-decoration: none;
     color: white;
+    transition: .5s;
+}
+
+.navbar ul li a:hover {
+    color: rgb(146, 146, 146);
 }
 
 .navbar-links {
@@ -128,8 +134,11 @@ div.navbar .right a{
     font-size: 13.5px;
     color: white;
     margin-left: 17px;
+    transition: .5s;
 }
-
+div.navbar .right a:hover{
+    color: rgb(146, 146, 146);
+}
 #newreleaseicon{
     width: 24px;
     height: 26px;
@@ -165,14 +174,14 @@ div.navbar .right a{
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
-    border-bottom: 8px solid transparent; /* Add a transparent border */
+    z-index: -6;
     filter: brightness(90%);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.427), transparent);
+    padding-bottom: 20px;
+    margin-bottom: 20px; 
   }
 
 .herosection{
-    padding: 150px 110px;
+    padding: 150px 100px;
     width: 80vh;
 }
 
@@ -182,7 +191,7 @@ div.navbar .right a{
 
 .herosection .description p{
     width: 40vw;
-    /* font-size: 1rem; */
+    
     
 }
 
@@ -201,10 +210,73 @@ div.navbar .right a{
     transition: 0.8s;
 }
 
+.vignette-layer{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 8%, 0) 0, hsla(0, 0%, 8%, .15) 15%, hsla(0, 0%, 8%, .35) 29%, hsla(0, 0%, 8%, .58) 44%, #141414 68%, #141414);
+    background-position: 0 top;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    bottom: -1px;
+    height: 14.7vw;
+    opacity: 1;
+    top: auto;
+    width: 100%;
+    position: relative;
+}
+
+.trailer-vignette-layer{
+    background: linear-gradient(69deg, rgba(0, 0, 0, .6), transparent 85%);
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 26.09%;
+    top: 0;
+    transition: opacity .5s;
+    z-index: -5;
+}
+.mute-and-rating{
+    color: white;
+    position: relative;
+    top: -330px;
+    right: 0;
+}
+
+.mr-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 7px 0px;
+}
+
+.mr-container .rating{
+    background-color: #67676777;
+    padding-left: 5px;
+    padding-right: 60px;
+    border-left: 3px solid white ;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.mute button{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white ;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
 
 .recommendations{
     background-color: rgba(255, 255, 255, 0);
-    padding-left: 70px;
+    padding-left: 100px;
+    position: relative;
+    top: -300px;
+
 }
 
 .carousel{
@@ -214,7 +286,7 @@ div.navbar .right a{
 
 .card{
     background-color: rgba(255, 255, 255, 0.352);
-    width: 220px;
+    width: 213px;
     height: 120px;
     border-radius: 4px;
 }
@@ -223,4 +295,7 @@ div.navbar .right a{
 .carousel .card img {
     max-width: 100%; 
     max-height: 100%; 
+    display: block;
+    margin: auto;
+    border-radius: 4px;
 }

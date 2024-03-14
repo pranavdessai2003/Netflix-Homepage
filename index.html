@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav>
-        <div class="navbar">
+        <div id="navbar" class="navbar">
             <div class="left">
                 <img src="Logo/Netflix_2015_logo.svg.png" alt="Netflix" srcset="">
                 <ul class="navbar-links">
@@ -63,11 +63,29 @@
                     <button><i class="fa-solid fa-play" style="color: #000000;"></i> &nbsp;&nbsp;Play</button>
                 </div>
                 <div class="moreinfo">
-                    <button style="background-color: #5a5a5acc;color: white;"><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> &nbsp;&nbsp;More Info</button>
+                    <button style="background-color: #5a5a5acc;color: white;">
+                        <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> &nbsp;&nbsp;More Info
+                    </button>
                 </div>
             </div>
+            
         </div>
-        
+        <div class="trailer-vignette-layer">
+
+        </div>
+        <div class="vignette-layer"></div>
+        <div class="mute-and-rating">
+            <span class="mr-container">
+                <div class="mute">
+                    <button class="mutebtn" onclick="muteSound()">
+                        <i id="mutebtn" class="fa-solid fa-volume-high" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+                <div class="rating">
+                    <b>A</b>
+                </div>
+            </span>
+        </div>
     </main>
     <div class="recommendations">
         <div class="popular">
