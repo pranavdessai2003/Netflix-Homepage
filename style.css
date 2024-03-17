@@ -299,3 +299,53 @@ div.navbar .right a:hover{
     margin: auto;
     border-radius: 4px;
 }
+
+div.footer{
+    color: grey;
+    margin: 20px auto 0;
+    max-width: 980px;
+    padding: 0 4%;
+    font-size: 14px;
+
+}
+div.footer .social-links{
+    display: flex;
+    margin-bottom: 1em;
+    gap: 20px;
+}
+
+div.footer .social-links a i{
+    width: 34px;
+    height: 34px;
+}
+
+div.footer .other-links{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 14px;
+    padding: 0;
+}
+
+div.footer .other-links-wrapper{
+    box-sizing: border-box;
+    flex: 0 0 25%;
+    list-style-type: none;
+    margin-bottom: 16px;
+    padding-right: 22px;
+}
+
+div.footer .other-links-wrapper a{
+    text-decoration: none;
+    color: grey ;
+}
+
+.service-button{
+    background: transparent;
+    border: 1px solid grey;
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 20px;
+    padding: 0.5em 
+}
