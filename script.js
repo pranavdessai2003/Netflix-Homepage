@@ -46,16 +46,16 @@ function populateCarousel(category, items) {
 
 let slideIndex = 0;
 
-function moveSlide(n) {
-    const slides = document.querySelectorAll('.slide');
-    const slideCount = slides.length;
-    
-    slideIndex += n;
-    if (slideIndex < 0) slideIndex = slideCount - 1;
-    if (slideIndex >= slideCount) slideIndex = 0;
-    
-    const offset = -100 * slideIndex;
-    document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+function moveSlide(n, category) {
+  const slides = document.querySelectorAll(`.${category} .slide`);
+  const slideCount = slides.length;
+  
+  slideIndex += n;
+  if (slideIndex < 0) slideIndex = slideCount - 1;
+  if (slideIndex >= slideCount) slideIndex = 0;
+  
+  const offset = -100 * slideIndex;
+  document.querySelector(`.${category} .slider`).style.transform = `translateX(${offset}%)`;
 }
 
 //code for navbar transition
